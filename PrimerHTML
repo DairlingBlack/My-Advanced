@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+         label {
+             color: black;
+         }
+    </style>
+</head>
+<body>
+<form name="formulario" method="post" action="/send.php">
+    <label>Cliente:</label>
+    <input type="text" name="nombre" value=""/>
+    <input type="submit" value="Enviar"/>
+
+    Teléfono:
+    <input type="tel" name="telefono" placeholder="xxxxxx@gmail.com" />
+    Correo:
+    <input type="email" name="correo" placeholder="nombre@dominio.com" />
+    Página web:
+    <input type="url" name="web" placeholder="https://pagina.com/" />
+
+    Usuario:
+    <input type="text" name="nombre" placeholder="ingrese su nombre" />
+    Password:
+    <input type="password" name="pass" placeholder="Ingrese una clave" />
+    <input type="hidden" name="informacion" value="72625" />
+
+    <textarea name="texto" cols="80" rows="10" placeholder="Describete en este espacio...">
+  </textarea>
+
+
+    <input type="number" name="numero" value="30" min="10" max="50" step="10" />
+    <input type="range" name="numrango" value="30" min="10" max="50" step="10" />
+
+
+
+    Selecciona la fecha deseada:
+    <input type="date" name="fecha" min="2018-03-25" max="2018-05-25" step="2" />
+    Selecciona la hora deseada:
+    <input type="time" name="hora" min="18:00" max="21:00" step="3600" />
+
+
+    Selecciona el mes deseado:
+    <input type="month" name="mes"
+           value="2018-05" min="2018-02" max="2018-06" step="2" />
+    Selecciona la semana deseada:
+    <input type="week" name="semana"
+           value="2018-W18" min="2018-W10" max="2018-W20" step="2" />
+
+
+    Selecciona la opción deseada:
+    <select name="combo">
+        <option value="1">Opción 1</option>
+        <option value="2" selected>Opción 2</option>
+    </select>
+
+    <select name="combo" multiple>
+        <optgroup label="Opciones básicas">
+            <option value="1" label="Opcion 1"> </option>
+        </optgroup>
+
+        <optgroup label="Opciones avanzadas">
+            <option value="2" label="Opcion 2"> </option>
+        </optgroup>
+    </select>
+
+
+    <input type="text" list="items" />
+    <datalist id="items">
+        <option value="1">Opción 1</option>
+        <option value="2">Opción 2</option>
+        <option value="3">Opción 3</option>
+    </datalist>
+
+    <input type="file" name="adjunto" accept=".pdf,.jpg,.png,.world" multiple />
+
+</form>
+</body>
+</html>
